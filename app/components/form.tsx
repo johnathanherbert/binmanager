@@ -15,6 +15,7 @@ interface FormData {
   pesagemType: string;
   operador: string;
   data: string;
+  lote: string;
 }
 
 const initialFormData: FormData = {
@@ -26,7 +27,8 @@ const initialFormData: FormData = {
   turno: "1º",
   pesagemType: "Pesagem Direta",
   operador: "",
-  data: ""
+  data: "",
+  lote: ""
 };
 
 export default function Form() {
@@ -82,6 +84,19 @@ export default function Form() {
               type="text"
               placeholder="2180102..."
               value={formData.ordemProducao}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="w-full md:w-1/2 px-3">
+            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+              Lote
+            </label>
+            <input
+              className="appearance-none block w-[510px] bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              id="lote"
+              type="text"
+              placeholder="S4D1234..."
+              value={formData.lote}
               onChange={handleChange}
             />
           </div>

@@ -11,7 +11,7 @@ export default function Home() {
       <header className="flex items-center absolute mt-10
       text-centers bg-[#5E95AA] w-full h-10 ">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <Icon icon="menu" />
+        <Icon icon="menu" href="/pesagens" />
       </header>
 
       <div className="flex">

@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({ ativo, ordemProducao, recursoBin, tara, pes
     const iconName = pesagemType === "Pesagem Direta" ? "close_fullscreen" : "precision_manufacturing";
 
     return (
-        <div className="bg-[#5E95AA] w-80 h-80 shadow-md rounded-lg p-10 pb-10">
+        <div className="bg-[#5E95AA] w-80 h-90 shadow-md rounded-lg p-10 pb-10">
             <div>
                 <h2 className="text-lg font-bold mb-1">{ativo}</h2>
             </div>

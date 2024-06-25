@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from "react";
 import { database } from "../lib/firebase";
 import { ref, onValue, limitToLast, query } from "firebase/database";
-import Card from "./card";
+import Card2 from "./card2";
 
 interface Pesagem {
     ativo: string;
@@ -34,7 +34,7 @@ const CardsList: React.FC = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {pesagens.map((pesagem, index) => (
-                <Card key={index} {...pesagem} />
+                <Card2 pesagemType={""} lote={""} key={index} {...pesagem} />
             ))}
         </div>
     );
